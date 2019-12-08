@@ -1,0 +1,29 @@
+size()
+	if length(arguments) == 1
+		width: arguments[0]
+		height: arguments[0]
+	else
+		width: arguments[0]
+		height: arguments[1]
+
+focus()
+	&:focus
+		box-shadow 0 0 0 3px alpha($blue, 0.25)
+		outline none
+
+placeholder()
+	&::-webkit-input-placeholder
+		{block}
+	&:-moz-placeholder
+		{block}
+	&::-moz-placeholder
+		{block}
+	&:-ms-input-placeholder
+		{block} 
+
+// @mixin placeholder {
+//   ::-webkit-input-placeholder {@content}
+//   :-moz-placeholder           {@content}
+//   ::-moz-placeholder          {@content}
+//   :-ms-input-placeholder      {@content}
+// }

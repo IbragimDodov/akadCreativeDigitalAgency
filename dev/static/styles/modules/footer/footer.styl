@@ -1,0 +1,62 @@
+footer
+    flex 0 0 auto
+
+.footer__inner-top
+    display flex
+    justify-content space-between
+    margin-top 25px
+    margin-bottom 10px
+
+.footer__inner-bottom
+    margin-bottom 30px
+
+.footer-nav__list
+    display flex
+    justify-content space-between
+
+.footer-nav__item
+    padding-right 23px
+    padding-left 20px
+    position relative
+    &:first-child
+        padding-left 0
+    &:last-child
+        padding-right 0
+
+.footer-nav__item:after
+    content ""
+    position absolute
+    top 50%
+    right 0
+    width 3px
+    height 2px
+    background-color #cdcdcd
+
+
+.footer-nav__link,
+.copyright
+    font-size 14px
+    font-family $font-family-OS
+    color rgb(154, 154, 154)
+    text-transform uppercase
+    line-height 3.4
+
+// .footer-bottom-nav__item
+//     display flex
+//     justify-content center
+//     align-items center
+
+
+.footer-bottom-nav__list
+    display flex
+    justify-content flex-end
+
+.footer-bottom-nav__icon
+    margin-left 17px
+    fill rgb(154, 154, 154)
+    width 15px
+    height 14px
+    display flex
+    align-items flex-end
+    &:first-child
+        margin-left 0

@@ -1,0 +1,105 @@
+.about-comment
+    margin-top 140px
+    margin-bottom 140px
+
+.about-comment__inner
+    display flex
+    justify-content space-between
+
+.about-comment__slider-block
+    position relative
+
+.about-comment__slider-block,
+.about-comment__sponsors
+    width 49%
+
+.about-comment__slider-item
+    text-align center
+    outline none
+
+.about-comment__slider-item.slick-slide
+    img 
+        display inline-block
+
+
+.about-comment__author-comment
+    font-size 14px
+    font-family $font-family-OS
+    color rgb(96, 96, 110)
+    line-height 2.1
+    margin-top 30px
+    margin-bottom 30px
+
+.about-comment__author-name
+    font-size 14px
+    font-family $font-family-MS
+    color rgb(255, 255, 255)
+    font-weight 700
+    text-transform uppercase
+    line-height 2.1
+    padding 10px
+    background-color #7beec7
+    display inline-block
+
+
+
+
+// dots for slick slide -----start
+
+.about-comment__slider-dots .slick-dots
+    position relative
+    display flex
+    justify-content center
+    margin-top 30px
+    li
+        font-size 0
+        line-height 0
+        margin-right 10px
+        position relative
+        display inline-block
+        // width 20px
+        // height 20px
+        // border 1px solid #e5e5e5
+        padding 0
+        cursor pointer
+        &:last-child
+            margin-right 0
+        button
+            display block
+            // width 20px
+            // height 20px
+            // padding 5px
+            border none
+            outline none
+            font inherit
+            color inherit
+            background-color transparent
+            cursor pointer
+            &:before
+                content ""
+                position absolute
+                top 0
+                left 0
+                width 15px
+                height 5px
+                background-color #60606e
+                text-align center
+
+.about-comment__slider-dots .slick-dots li.slick-active button:before
+    width 30px
+    background-color #7beec7
+
+.about-comment__slider-dots .slick-dots li.slick-active
+    margin-right 30px
+    &:last-child
+        margin-right 15px
+
+// dots for slick slide -----end
+
+.about-comment__sponsors
+    display flex
+    justify-content space-between
+    flex-wrap wrap
+    img
+        display inline-block
+        margin-bottom 30px

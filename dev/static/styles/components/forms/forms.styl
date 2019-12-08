@@ -1,0 +1,29 @@
+.form-control
+	background-clip padding-box
+	background-color $white
+	background-image none
+	border 0
+	border-bottom 3px solid $blue
+	border-radius 0
+	color $darkBlue
+	display block
+	font-family $font-family-base
+	font-size 1rem
+	line-height 1.25
+	padding 6px 0
+	text-transform uppercase
+	transition border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s
+	width 100%
+	focus()
+
+	@media (min-width: $grid-md)
+		font-size 1.2rem
+
+	&::-ms-expand
+		background-color transparent
+		border 0
+
+	&:disabled,
+	&[readonly]
+		background-color #e9ecef
+		opacity 1
