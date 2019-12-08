@@ -1,0 +1,44 @@
+.services-top-section__inner
+    display flex
+    justify-content space-between
+
+.services-left-block-descr,
+.services-right-block-img
+    width 49%
+
+.services-right-block-image
+    width 100%
+    padding-top 10px
+
+.services-left-block-descr__text,
+.services-left-block-descr__item
+    font-size 14px
+    font-family $font-family-OS
+    color rgb(96, 96, 110)
+    line-height 2.1
+
+.services-left-block-descr__list
+    margin-right 60px
+
+.services-left-block-descr__list-wrapper
+    display flex
+    justify-content space-between
+    margin-top 45px
+
+
+.services-left-block-descr__item
+    padding-left 20px
+    position relative
+
+.services-left-block-descr__item:before
+    content ""
+    position absolute
+    top 50%
+    transform translateY(-50%)
+    left 0
+    width 10px
+    height 10px
+    background-image url("../../static/images/content/services/services-top-block-icon.png")
+    background-repeat no-repeat
+    background-size cover
+    background-position center

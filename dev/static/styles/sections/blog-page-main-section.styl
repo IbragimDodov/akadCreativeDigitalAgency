@@ -16,6 +16,7 @@
 
 .intro-article__item-img
     margin-bottom 23px
+    width 100%
 
 .intro-article__item-img-date
     font-size 14px
@@ -161,7 +162,8 @@
     text-transform uppercase
     line-height 1.2
 
-.posts__content-block-date
+.posts__content-block-date,
+.panel-collapse__inner-link
     font-size 12px
     font-family $font-family-OS
     color rgb(154, 154, 154)
@@ -215,3 +217,95 @@
 
 
 
+
+
+
+
+
+.panel-heading
+    border-bottom 1px solid #bfbfbf
+    position relative
+
+.panel-heading-text
+    font-size 14px
+    font-family $font-family-OS
+    color rgb(96, 96, 110)
+    line-height 1.4
+    display block
+    padding 20px
+    z-index 3
+    cursor pointer
+
+.panel-heading-text-info
+    font-size 13px
+    font-family $font-family-OS
+    color rgb(96, 96, 110)
+    position absolute
+    top 50%
+    transform translateY(-50%)
+    right 20px
+    z-index 2
+
+.panel-expand .panel-heading-text-info
+    display none
+
+.panel-collapse
+    display none
+
+.panel-collapse__inner ul
+    margin-top 10px
+    padding-left 20px
+    li
+        position relative
+        padding-left 20px
+        margin-top 5px
+        margin-bottom 5px
+        &:before
+            content ""
+            position absolute
+            // fill #7beec7
+            top 9px
+            left 0
+            width 9px
+            height 9px
+            background-image url("../../static/images/content/blog/link-arrow.png")
+            background-repeat no-repeat
+            background-position center
+            background-size contain
+            transition .5s
+
+.panel-collapse__inner-item:hover:before
+    transform translateX(4px)
+
+
+.panel-collapse__inner-link
+    font-size 16px
+
+.panel-collapse__inner-link:hover
+    color #5a5454
+    font-weight 700
+
+
+
+
+.tags-block__inner-list
+    display flex
+    flex-wrap wrap
+    justify-content flex-start
+
+.tags-block__inner-item
+    display inline-block
+    font-size 12px
+    font-family $font-family-MS
+    font-weight 700
+    color rgb(153, 153, 153)
+    text-transform uppercase
+    line-height 1
+    padding 10px 13px
+    background-color #e5e5e5
+    margin-top 5px
+    margin-right 5px
+
+.grow47
+    flex-grow 0
+    width 47%

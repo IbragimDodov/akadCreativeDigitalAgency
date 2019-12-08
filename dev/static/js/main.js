@@ -13,6 +13,20 @@ $(document).ready(function () {
     
 
 
+    // --------start-----------blog-page panel
+
+    $('.panel-heading').click(function () {
+        $(this).toggleClass('panel-expand').next().slideToggle();
+        $('.panel-heading').not(this).removeClass('panel-expand').next().slideUp();
+    });
+
+
+    // --------end-----------blog-page panel
+
+
+
+
+
 });
 
 

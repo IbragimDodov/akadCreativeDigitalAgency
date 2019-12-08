@@ -1,0 +1,22 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Сервисы'
+	- var pageClass = 'services-page'
+
+block content
+	include ../sections/services-intro-section
+	section.mini-blog
+		.container
+			.mini-blog__inner
+				h2.mini-blog__title.general-title What we do
+				p.mini-blog__info-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+	include ../sections/services-top-section
+	include ../sections/services-middle-section
+	section.mini-blog
+		.container
+			.mini-blog__inner
+				h2.mini-blog__title.general-title pricing plans
+				p.mini-blog__info-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+	include ../sections/services-bottom-section
+	include ../sections/sup-footer
