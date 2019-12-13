@@ -2,13 +2,21 @@
     display flex
     justify-content space-between
     margin-bottom 140px
+    flex-flow row wrap
+
+    // @media (max-width $grid-lg-max)
+    //     flex-direction column
 
 .services-bottom-section__item
     position relative
-    width 31%
+    min-width 28%
     padding-left 30px
     padding-top 30px
     border-top 5px solid #7beec7
+
+    @media (max-width $grid-lg-max)
+        padding-left 10px
+
 
 .services-bottom-section__item:hover
     box-shadow 0px 0px 50px 0px rgba(0, 0, 0, 0.25)
@@ -40,6 +48,9 @@
 
 .services-bottom-section__item-list
     margin-top 47px
+
+    @media (max-width $grid-lg-max)
+        margin-right 10px
 
 .services-bottom-section__item-link
     display inline-block

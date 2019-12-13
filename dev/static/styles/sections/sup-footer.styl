@@ -7,13 +7,24 @@
     padding-top 60px
     padding-bottom 45px
 
+    @media (max-width $grid-xs-max)
+        flex-direction column
+        padding-top 25px
+
 .sup-footer__left-block
-    width 535px
+    width 48%
+
+    @media (max-width $grid-xs-max)
+        width 100%
+        text-align center
 
 .sup-footer__right-block
-    width 560px
+    width 51%
     background-color $white
     padding 20px 25px
+
+    @media (max-width $grid-xs-max)
+        width 100%
 
 .intro6-title
     font-size 30px
@@ -33,11 +44,21 @@
     line-height 1.2
     padding 20px 30px
     margin-top 30px
+    cursor pointer
+
+    @media (max-width $grid-xs-max)
+        display block
+        text-align center
+        margin-bottom 10px
+        margin-top 15px
 
 
 .sup-footer__right-block-form
-    width 510px
+    width 100%
     margin-top 30px
+
+    @media (max-width $grid-xs-max)
+        margin-top 20px
 
 .sup-footer__right-block-title
     font-size 24px
@@ -47,20 +68,29 @@
     line-height 1.5
     text-transform uppercase
 
+    @media (max-width $grid-xs-max)
+        text-align center
+        margin-bottom 10px
+
 .sup-footer__right-block-text
     font-size 16px
     color rgb(153, 153, 153)
     line-height 1.5
 
 .sup-footer__input
-    width 375px
+    width 75%
     font-size 12px
     color rgb(205, 205, 205)
     line-height 1
     padding: 20px
 
+    @media (max-width $grid-md-max)
+        display block
+        width 98%
+        margin-bottom 5px
+
 .sup-footer__right-block-btn
-    width 125px
+    width 23%
     cursor pointer
     background-color #7beec7
     font-size 14px
@@ -68,6 +98,11 @@
     left -5px
     line-height 1
     padding 20px 20px 21px 20px
+
+    @media (max-width $grid-md-max)
+        display block
+        width 98%
+        margin-left 5px
 
 .sup-footer__input,
 .sup-footer__right-block-btn

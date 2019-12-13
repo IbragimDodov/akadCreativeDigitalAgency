@@ -1,6 +1,9 @@
 .blog-page-main-section
     margin-top 145px
 
+    @media (max-width $grid-sm-max)
+        margin-top 50px
+
 .blog-page-main-section__inner
     display flex
     justify-content space-between
@@ -8,8 +11,25 @@
 .content
     width 65%
 
+    @media (max-width $grid-md-max)
+        width 58%
+
+    @media (max-width $grid-sm-max)
+        width 100%
+
 .sidebar
-    width 22%
+    width 24%
+
+
+    @media (max-width $grid-lg-max)
+        width 28%
+
+    @media (max-width $grid-md-max)
+        width 38%
+
+    @media (max-width $grid-sm-max)
+        display none
+
 
 .intro-article__item
     margin-bottom 100px
@@ -17,6 +37,7 @@
 .intro-article__item-img
     margin-bottom 23px
     width 100%
+    height auto
 
 .intro-article__item-img-date
     font-size 14px
@@ -126,7 +147,7 @@
 .searchbtn
     position absolute
     right 0
-    width 50px
+    width 18%
     height 44px
     border none
     cursor pointer

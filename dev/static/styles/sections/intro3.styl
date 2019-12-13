@@ -8,14 +8,59 @@
     flex-wrap wrap
     margin-right 125px
     padding-top 20px
+    width 49%
+
+    @media (max-width $grid-xs-max)
+        flex-direction column
+        margin-right 0
+
+    @media (max-width $grid-sm-max)
+        width 100%
+        margin-right 0
+        padding-top 0
+
+    @media (max-width $grid-md-max)
+        margin-right 0
+
+.intro3-section__inner-right-box
+    width 49%
+
+    @media (max-width $grid-sm-max)
+        width 0%
+        display none
+
+    @media (max-width $grid-md-max)
+        display flex
+        align-items center
+
+.intro3-section__inner-right-box img
+    width 100%
+    height auto
+
+    @media (max-width $grid-sm-max)
+        display none
 
 .intro3__item
-    width 245px
+    width 42%
+
+    @media (max-width $grid-xs-max)
+        width 100%
+        text-align center
+
+    @media (max-width $grid-sm-max)
+        margin-bottom 50px
 
 .intro3__item-icon
     height 30px
     display flex
     align-items center
+
+    @media (max-width $grid-xs-max)
+        display inline-flex
+        align-items center
+
+    @media (max-width $grid-xl-max)
+        height 26px
 
 .intro3__item-title
     font-size 18px
@@ -27,8 +72,17 @@
     margin-bottom 10px
     margin-top 15px
 
+    @media (max-width $grid-xs-max)
+        margin-top 0
+
+    @media (max-width $grid-xl-max)
+        font-size 14px
+
 .intro3__item-marker
     font-size 14px
     color rgb(153, 153, 153)
     text-transform uppercase
     line-height 2.1
+
+    @media (max-width $grid-xl-max)
+        font-size 12px

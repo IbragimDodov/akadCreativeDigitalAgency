@@ -17,9 +17,6 @@ body
 
 	font-family $font-family-OS
 
-	@media (max-width: $grid-sm-max)
-		padding-top 5.2rem
-
 h1, h2, h3, h4, h5, h6 
 	margin 0
 
@@ -43,7 +40,7 @@ video,
 textarea
 	vertical-align middle
 
-textarea 
+textarea
 	resize none
 
 section
@@ -61,16 +58,30 @@ button
 	height 100%
 
 .main
-	// 
-	
+	//
+
 .container
 	margin-left auto
 	margin-right auto
 	// padding-left calc(var(--grid-gutter-width) / 2)
 	// padding-right calc(var(--grid-gutter-width) / 2)
 	padding 0 15px
-	// width 100%
-	width $content-size
+	width 100%
+
+	@media(min-width $grid-sm)
+		max-width $container-sm
+
+	@media(min-width $grid-md)
+		max-width $container-md
+
+	@media(min-width $grid-lg)
+		max-width $container-lg
+
+	@media(min-width $grid-xl)
+		max-width $container-xl
+
+	@media(min-width $grid-xxl)
+		max-width $container-xxl
 
 .header,
 .footer

@@ -3,8 +3,14 @@
     justify-content space-between
     margin-bottom 145px
 
+    @media (max-width $grid-xs-max)
+        margin-bottom 50px
+
 .tabs__left-box
     width 190px
+
+    @media (max-width $grid-lg-max)
+        margin-right 50px
 
 .tabs__title
     font-size 30px
@@ -13,6 +19,9 @@
     font-weight 700
     text-transform uppercase
     line-height 1.6
+
+    @media (max-width $grid-xs-max)
+        font-size 20px
 
 
 .tabs__item
@@ -26,6 +35,9 @@
     padding-left 20px
     padding-right 20px
     margin-top 20px
+
+    @media (max-width $grid-xs-max)
+        font-size 12px
 
 .tabs__item.active
     background-color rgb(123, 238, 199)

@@ -7,12 +7,19 @@ footer
     margin-top 25px
     margin-bottom 10px
 
+    @media (max-width $grid-lg-max)
+        flex-wrap wrap
+        flex-direction column
+
 .footer__inner-bottom
     margin-bottom 30px
 
 .footer-nav__list
     display flex
     justify-content space-between
+
+    @media (max-width $grid-sm-max)
+        flex-direction column
 
 .footer-nav__item
     padding-right 23px
@@ -22,6 +29,9 @@ footer
         padding-left 0
     &:last-child
         padding-right 0
+
+    @media (max-width $grid-sm-max)
+        padding-left 0
 
 .footer-nav__item:after
     content ""
@@ -50,6 +60,9 @@ footer
 .footer-bottom-nav__list
     display flex
     justify-content flex-end
+
+    @media (max-width $grid-lg-max)
+        justify-content flex-start
 
 .footer-bottom-nav__icon
     margin-left 17px

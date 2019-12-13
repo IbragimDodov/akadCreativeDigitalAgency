@@ -2,6 +2,9 @@
     margin-top 130px
     margin-bottom 130px
 
+    @media (max-width $grid-xs-max)
+        margin-top 50px
+
 .cp-main-section__inner
     display flex
     justify-content space-between
@@ -9,6 +12,18 @@
 .cp-main-section__left-block,
 .cp-main-section__right-block
     width 48%
+
+.cp-main-section__left-block
+    @media (max-width $grid-xs-max)
+        width 100%
+
+.cp-main-section__right-block
+    @media (max-width $grid-xs-max)
+        display none
+
+.cp-main-section__right-block img 
+    width 100%
+    height auto
 
 .cp-main-section__form
     width 100%

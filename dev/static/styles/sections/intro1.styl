@@ -3,6 +3,9 @@
 .main-view
     padding-top 210px
 
+    @media (max-width $grid-sm-max)
+        padding-top 100px
+
 .main-view__title-block
     display flex
     justify-content center
@@ -24,17 +27,19 @@
 .main-view__title
     display inline-block
     font-size 48px
-    
     line-height 1
     text-align center
     padding 20px 35px
     border 10px solid rgb(96, 96, 110)
 
+    @media (max-width $grid-xs-max)
+        font-size 30px
+
 .main-view__descr
     margin-top 30px
     margin-left auto
     margin-right auto
-    width 545px
+    max-width 545px
     text-align center
 
 .main-view__descr-text
@@ -47,17 +52,40 @@
     align-items center
     margin-top 120px
 
-.intro1-section-history__info
-    width 550px
-    padding-bottom 63px
+    @media (max-width $grid-lg-max)
+        align-items flex-start
 
-.intro1-section-history__info-title
-    margin-bottom 20px
+    @media (max-width $grid-sm-max)
+        flex-direction column
+        margin-top 70px
 
-.intro1-section-history__info-text
-    font-size 16px
-    color rgb(96, 96, 110)
-    line-height 1.8
+
+.intro1-section-history-img
+    width 41%
+
+    @media (max-width $grid-sm-max)
+        width 100%
+        margin-bottom 30px
+
+.intro1-section-history-image
+    width 100%
+    height auto
+
+.intro1-section-history
+    &__info
+        width 49%
+        padding-bottom 63px
+
+        @media (max-width $grid-sm-max)
+            width 100%
+
+        &-title
+            margin-bottom 20px
+
+        &-text
+            font-size 16px
+            color rgb(96, 96, 110)
+            line-height 1.8
 
 .intro1-section-history__info-button-wrapper
     text-align end
@@ -65,4 +93,3 @@
 
 .intro1-section-history__info-button
     outline none
-    

@@ -5,6 +5,9 @@
     img 
         margin-bottom 30px
 
+    @media (max-width $grid-sm-max)
+        justify-content center
+
 .photo-descr
     background-color #efeff0
     padding 30px 50px
@@ -18,5 +21,14 @@
     color rgb(96, 96, 110)
     line-height 2.6
 
+    @media (max-width $grid-xs-max)
+        display none
+
 .lh-1
     line-height 1
+
+
+.intro1-section-history__info-button
+    @media (max-width $grid-xs-max)
+        width 100%
+        text-align center

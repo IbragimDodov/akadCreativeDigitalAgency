@@ -1,12 +1,18 @@
 .services-middle-section
     margin-top 140px
 
+    @media (max-width $grid-sm-max)
+        margin-top 50px
+
 .services-middle-section__items
     display flex
     justify-content space-between
+    // flex-wrap wrap
+    @media (max-width $grid-sm-max)
+        flex-direction column
 
 .services-middle-section__item
-    width 21%
+    min-width 21%
     text-align center
 
 .services-middle-section__item-icon
