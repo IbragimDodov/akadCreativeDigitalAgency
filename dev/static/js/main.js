@@ -10,7 +10,7 @@ $(document).ready(function () {
         arrows: false,
         appendDots: ".about-comment__slider-dots"
     });
-    
+
 
 
     // --------start-----------blog-page panel
@@ -28,6 +28,12 @@ $(document).ready(function () {
 
 
 });
+
+$('.menu').on('click', function (e) {
+    e.preventDefault();
+    $('.menu__link').toggleClass('menu-active')
+    $('.header-nav__list').toggleClass('menu-active')
+})
 
 
 (function($) {

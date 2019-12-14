@@ -2,5 +2,30 @@ header.header
     .container
         .header__inner
             .header__content
-                span.header__logo-text akad.
-                img.header__menu-img(src="static/images/general/header-menu.png", alt="Меню")
+                .header__logo-text
+                    a(href="index.html") akad.
+
+                ul.footer-nav__list.header-nav__list
+                    li.footer-nav__item
+                        a.footer-nav__link(href="about.html") about us
+                    li.footer-nav__item
+                        a.footer-nav__link(href="services.html") services
+                    li.footer-nav__item
+                        a.footer-nav__link(href="contact.html") contact us
+                    li.footer-nav__item
+                        a.footer-nav__link(href="blog.html") blog
+
+                .menu
+                    a(href="#").menu__link
+                        img.header__menu-img(src="static/images/general/header-menu.png", alt="Меню")
+                //- nav.header__nav
+                //-     ul.header__nav-list
+                //-         li.header__nav-item
+                //-             a.header__nav-link(href="about.html") about us
+                //-         li.header__nav-item
+                //-             a.header__nav-link(href="blog.html") blog
+                //-         li.header__nav-item
+                //-             a.header__nav-link(href="contact.html") contact
+                //-         li.header__nav-item
+                //-             a.header__nav-link(href="services.html") services
+                

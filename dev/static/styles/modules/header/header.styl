@@ -26,9 +26,48 @@
     font-weight 700
     text-transform uppercase
 
+
+.header-nav__list
+    @media (max-width $grid-sm-max)
+        display none
+
+.header-nav__list.menu-active
+    display block
+    position absolute
+    top 0
+    left 0
+    width 100%
+    background-color #ffffff
+    text-align center
+    .footer-nav__item
+        padding 0
+        border-bottom 1px solid #c5c5c5
+    .footer-nav__link
+        color #000000
+        font-weight 700
+
+.menu
+    display none
+    z-index 10
+
+    @media (max-width $grid-sm-max)
+        display block
+
+.menu__link
+    display block
+
 .header__menu-img
     width 31px
     height 15px
 
 
 // @media (max-width: )
+
+
+
+.header__nav-list
+    display flex
+    justify-content space-between
+
+.header__nav-item
+    margin-left 20px
