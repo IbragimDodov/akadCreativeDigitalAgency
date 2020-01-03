@@ -10,7 +10,7 @@ module.exports = function () {
     $.gulp.task('pug', () => {
         return $.gulp.src('./dev/pug/pages/*.pug')
             .pipe(plumber())
-            .pipe(changed('dist', {extension: '.html'}))
+            .pipe(changed('dest', {extension: '.html'}))
             .pipe(gulpif(global.isWatching, cached('pug')))
             .pipe(pugInheritance({basedir: './dev/pug/pages', skip: 'node_modules'}))
             .pipe(filter(function (file) {
