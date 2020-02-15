@@ -45,6 +45,6 @@
     "normalize.css": "^8.0.0",
     "owl.carousel": "^2.3.4",
     "svg4everybody": "^2.1.9",
-    "yarn": "^1.21.0"
+    "yarn": "^1.22.0"
   }
 }
